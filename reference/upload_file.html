@@ -18,7 +18,7 @@ user workspace) on the back-end."><meta property="og:image" content="/logo.png">
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openeo</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.2.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.2.2</span>
       </span>
     </div>
 
@@ -68,32 +68,43 @@ user workspace) on the back-end.</p>
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">upload_file</span><span class="op">(</span>
-  <span class="va">content</span>,
-  <span class="va">target</span>,
-  encode <span class="op">=</span> <span class="st">"raw"</span>,
-  mime <span class="op">=</span> <span class="st">"application/octet-stream"</span>,
-  con <span class="op">=</span> <span class="cn">NULL</span>
-<span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">upload_file</span><span class="op">(</span></span>
+<span>  <span class="va">content</span>,</span>
+<span>  <span class="va">target</span>,</span>
+<span>  encode <span class="op">=</span> <span class="st">"raw"</span>,</span>
+<span>  mime <span class="op">=</span> <span class="st">"application/octet-stream"</span>,</span>
+<span>  con <span class="op">=</span> <span class="cn">NULL</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>content</dt>
 <dd><p>the file path of the file to be uploaded</p></dd>
+
+
 <dt>target</dt>
 <dd><p>the relative server path location for the file, e.g. where to find the file in the users workspace</p></dd>
+
+
 <dt>encode</dt>
 <dd><p>the encoding type used to upload the data, e.g. 'multipart','form','json','raw' ('raw' by default)</p></dd>
+
+
 <dt>mime</dt>
 <dd><p>mime type used in upload_file ('application/octet-stream' as a default)</p></dd>
+
+
 <dt>con</dt>
 <dd><p>authorized Connection (optional) otherwise <code><a href="active_connection.html">active_connection</a></code>
 is used.</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>the relative file path on the server</p>
+    
+
+<p>the relative file path on the server</p>
     </div>
 
   </div>
@@ -108,7 +119,7 @@ is used.</p></dd>
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
       </footer></div>

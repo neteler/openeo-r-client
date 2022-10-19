@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">openeo</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.2.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.2.2</span>
       </span>
     </div>
 
@@ -66,38 +66,53 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">create_user_process</span><span class="op">(</span>
-  <span class="va">graph</span>,
-  id <span class="op">=</span> <span class="cn">NULL</span>,
-  summary <span class="op">=</span> <span class="cn">NULL</span>,
-  description <span class="op">=</span> <span class="cn">NULL</span>,
-  submit <span class="op">=</span> <span class="cn">TRUE</span>,
-  con <span class="op">=</span> <span class="cn">NULL</span>,
-  <span class="va">...</span>
-<span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">create_user_process</span><span class="op">(</span></span>
+<span>  <span class="va">graph</span>,</span>
+<span>  id <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  summary <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  description <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  submit <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  con <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  <span class="va">...</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>graph</dt>
 <dd><p>a process graph definition</p></dd>
+
+
 <dt>id</dt>
 <dd><p>the title of the user process</p></dd>
+
+
 <dt>summary</dt>
 <dd><p>the summary for the user process (optional)</p></dd>
+
+
 <dt>description</dt>
 <dd><p>the description for the user process (optional)</p></dd>
+
+
 <dt>submit</dt>
 <dd><p>whether to create a new user process at the openEO service or to create it for local use (default set to submit = TRUE)</p></dd>
+
+
 <dt>con</dt>
 <dd><p>connected and authorized openEO client object (optional) otherwise <code><a href="active_connection.html">active_connection</a></code>
 is used.</p></dd>
+
+
 <dt>...</dt>
 <dd><p>additional parameters passed to jsonlite::toJSON() (like 'digits')</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>a list assembling a process graph description or the graph id if send</p>
+    
+
+<p>a list assembling a process graph description or the graph id if send</p>
     </div>
     <div id="details">
     <h2>Details</h2>
@@ -119,7 +134,7 @@ object <code>udp</code> on the console.</p>
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
       </footer></div>
